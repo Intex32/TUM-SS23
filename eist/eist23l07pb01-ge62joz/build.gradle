@@ -1,0 +1,33 @@
+apply plugin: 'java'
+sourceCompatibility = 17
+version = '1.0.0'
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.easymock:easymock:5.1.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+    test {
+        java {
+            srcDirs 'test'
+        }
+        compileClasspath += main.output
+        runtimeClasspath += main.output
+    }
+}
+
+test {
+    defaultCharacterEncoding = 'UTF-8'
+    useJUnitPlatform()
+}
