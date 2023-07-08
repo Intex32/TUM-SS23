@@ -1,0 +1,13 @@
+#0
+de/tum/in/ase/eist/restaurant/profitCalculation/dead/BusinessSoftwareEngineer.java:22: warning: Thread Safety Violation
+  Read/Write race. Non-private method `BusinessSoftwareEngineer.getBalance()` reads without synchronization from `this.balance`. Potentially races with write in method `BusinessSoftwareEngineer.addMoney(...)`.
+ Reporting because another access to the same memory occurs on a background thread, although this access may not.
+  20.   
+  21.       public int getBalance() {
+  22. >         return balance;
+  23.       }
+  24.   
+
+Found 1 issue
+                        Issue Type(ISSUED_TYPE_ID): #
+  Thread Safety Violation(THREAD_SAFETY_VIOLATION): 1
