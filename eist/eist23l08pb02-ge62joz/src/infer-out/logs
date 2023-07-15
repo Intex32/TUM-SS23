@@ -1,0 +1,126 @@
+[11][      debug] Loading models took 371ms
+[12][      debug] Sqlite write daemon: starting up
+[12][      debug] Sqlite write daemon: set up complete, waiting for connections
+[11][   progress] Waiting for Sqlite write daemon to start (0.200000 seconds)
+[11][   progress] Waiting for Sqlite write daemon to start (0.400000 seconds)
+[11][   progress] Waiting for Sqlite write daemon to start (0.800000 seconds)
+[11][   progress] 
+[11][environment] CWD = /eist23l08pb02-exercise
+[11][environment] No .inferconfig file found
+[11][environment] Project root = /eist23l08pb02-exercise
+[11][environment] INFER_ARGS =   @/tmp/args.tmp.e70edb
+[11][environment] command line arguments:   infer run -- javac
+[11][environment]                           de/tum/in/ase/eist/restaurant/profitCalculation/dead/BusinessSoftwareEngineer.java
+[11][environment]                           de/tum/in/ase/eist/restaurant/profitCalculation/dead/Main.java
+[11][environment]                           de/tum/in/ase/eist/restaurant/profitCalculation/dead/WorkingDay.java
+[11][environment] Available memory at startup: 2543 MB
+[11][environment] Active checkers: self-in-block (C/C++/ObjC), starvation (C/C++/ObjC, Java), uninit (C/C++/ObjC), siof (C/C++/ObjC), dotnet-resource-leak (C#/.Net), racerd (C/C++/ObjC, Java), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), biabduction (C/C++/ObjC, Java, C#/.Net)
+[11][environment] Scheduler: file
+[11][environment] Cores used: 4
+[11][environment] Infer version v1.1.0
+[11][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[11][environment] 
+[11][   progress] Capturing in javac mode...
+[11][      debug] Current working directory: '/eist23l08pb02-exercise'
+[11][      debug] Trying to execute: javac '-J-Duser.language=en' '@/eist23l08pb02-exercise/infer-out/tmp/javac_args.tmp.074163' 2>'/eist23l08pb02-exercise/infer-out/tmp/javac.tmp.3ab7ae.out'
+[11][      debug] *** Success. Logs:
+[11][      debug] Translating 3 source files (3 classes)
+[11][      debug] done capturing all files
+[11][      debug] GC stats for capture:
+[11][      debug]   minor_words: 1.96346e+06
+[11][      debug]   promoted_words: 313674
+[11][      debug]   major_words: 330097
+[11][      debug]   minor_collections: 2
+[11][      debug]   major_collections: 0
+[11][      debug]   compactions: 0
+[11][      debug]   top_heap_words: 1006592
+[11][      debug]   
+[11][environment] Parallel jobs: 4
+[11][   progress] Found 3 source files to analyze in /eist23l08pb02-exercise/infer-out
+[35][   progress] de/tum/in/ase/eist/restaurant/profitCalculation/dead/WorkingDay.java starting
+[34][   progress] de/tum/in/ase/eist/restaurant/profitCalculation/dead/BusinessSoftwareEngineer.java starting
+[33][   progress] de/tum/in/ase/eist/restaurant/profitCalculation/dead/Main.java starting
+[34][   progress] de/tum/in/ase/eist/restaurant/profitCalculation/dead/BusinessSoftwareEngineer.java DONE
+[35][   progress] de/tum/in/ase/eist/restaurant/profitCalculation/dead/WorkingDay.java DONE
+[33][   progress] de/tum/in/ase/eist/restaurant/profitCalculation/dead/Main.java DONE
+[11][      debug] Backend stats:
+[11][      debug]   summary_file_try_load= 100
+[11][      debug]   summary_read_from_disk= 5
+[11][      debug]   summary_cache_hits= 288 (74%)
+[11][      debug]   summary_cache_misses= 100
+[11][      debug]   ondemand_procs_analyzed= 13
+[11][      debug]   ondemand_local_cache_hits= 120 (78%)
+[11][      debug]   ondemand_local_cache_misses= 33
+[11][      debug]   proc_locker_lock_time_user= 0.00000000
+[11][      debug]   proc_locker_lock_time_sys= 0.00000000
+[11][      debug]   proc_locker_lock_time_wall= 0.00000000
+[11][      debug]   proc_locker_unlock_time_user= 0.00000000
+[11][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[11][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[11][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[11][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[11][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[11][      debug]   restart_scheduler_total_time_user= 0.00000000
+[11][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[11][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[11][      debug]   
+[11][      debug] GC stats for backend_stats.gc_stats_add.:
+[11][      debug]   minor_words: 9.54371e+06
+[11][      debug]   promoted_words: 176430
+[11][      debug]   major_words: 206475
+[11][      debug]   minor_collections: 11
+[11][      debug]   major_collections: 3
+[11][      debug]   compactions: 0
+[11][      debug]   top_heap_words: 4479488
+[11][      debug]   
+[11][      debug] GC stats for backend_stats.gc_stats_max.:
+[11][      debug]   minor_words: 4.14474e+06
+[11][      debug]   promoted_words: 67652
+[11][      debug]   major_words: 83488
+[11][      debug]   minor_collections: 5
+[11][      debug]   major_collections: 1
+[11][      debug]   compactions: 0
+[11][      debug]   top_heap_words: 1157632
+[11][      debug]   
+[11][      debug] Average over 4 processes
+[11][      debug] GC stats for backend_stats.gc_stats_average.:
+[11][      debug]   minor_words: 2.38593e+06
+[11][      debug]   promoted_words: 44107.5
+[11][      debug]   major_words: 51618.8
+[11][      debug]   minor_collections: 2
+[11][      debug]   major_collections: 0
+[11][      debug]   compactions: 0
+[11][      debug]   top_heap_words: 1119872
+[11][      debug]   
+[11][      debug] Analysis phase finished in 1.172s
+[11][      debug] backend_stats.scheduler_process_analysis_time_user= 0.00000000
+[11][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.41007300
+[11][      debug] backend_stats.scheduler_process_analysis_time_wall= 1.17218890
+[11][      debug] GC stats for analysis_scheduler:
+[11][      debug]   minor_words: 640862
+[11][      debug]   promoted_words: 44651
+[11][      debug]   major_words: 53357
+[11][      debug]   minor_collections: 1
+[11][      debug]   major_collections: 2
+[11][      debug]   compactions: 1
+[11][      debug]   top_heap_words: 1157632
+[11][      debug]   
+[11][      debug] GC stats for report:
+[11][      debug]   minor_words: 25286
+[11][      debug]   promoted_words: 0
+[11][      debug]   major_words: 1113
+[11][      debug]   minor_collections: 0
+[11][      debug]   major_collections: 0
+[11][      debug]   compactions: 0
+[11][      debug]   top_heap_words: 1157632
+[11][      debug]   
+[11][      debug] GC stats for main_process_full:
+[11][      debug]   minor_words: 4.27777e+06
+[11][      debug]   promoted_words: 525697
+[11][      debug]   major_words: 1.07798e+06
+[11][      debug]   minor_collections: 12
+[11][      debug]   major_collections: 5
+[11][      debug]   compactions: 2
+[11][      debug]   top_heap_words: 1157632
+[11][      debug]   
+[12][      debug] Sqlite write daemon: terminating
