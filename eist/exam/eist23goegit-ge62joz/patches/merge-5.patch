@@ -1,0 +1,69 @@
+From 3386dfddec77154adfc4fa5e149f0c1dba9028b9 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bat=C4=B1kan=20Ormanc=C4=B1?= <other.developer@in.tum.de>
+Date: Fri, 26 May 2023 02:50:08 +0200
+Subject: [PATCH] merge-5
+
+---
+ src/de/tum/in/ase/eist/MergeSort.java | 46 +++++++++++++--------------
+ 1 file changed, 23 insertions(+), 23 deletions(-)
+
+diff --git a/src/de/tum/in/ase/eist/MergeSort.java b/src/de/tum/in/ase/eist/MergeSort.java
+index 962ffde..8fd3cb4 100644
+--- a/src/de/tum/in/ase/eist/MergeSort.java
++++ b/src/de/tum/in/ase/eist/MergeSort.java
+@@ -45,29 +45,29 @@ public static void mergeSort(int[] arr) {
+      */
+     private static void merge(int[] arr, int[] left, int[] right) {
+         // TODO: Find correct merge implementation from one of the branches.
+-        
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
+-    
++        int i = 0;
++        int j = 0;
++        int k = 0;
++        while (i < left.length - 1 && j < right.length - 1) {
++            if (left[i] < right[j]) {
++                arr[k] = left[i];
++                i++;
++            } else {
++                arr[k] = right[j];
++                j++;
++            }
++            k++;
++        }
++        while (i < left.length) {
++            arr[k] = left[i];
++            i++;
++            k++;
++        }
++        while (j < right.length) {
++            arr[k] = right[j];
++            j++;
++            k++;
++        }
+     
+     
+     
+-- 
+2.38.1.windows.1
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <persistence-unit name="persistence" transaction-type="RESOURCE_LOCAL">
+        <properties>
+            <!-- JDBC connection settings -->
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:mem:Artemis;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE"/>
+            <property name="jakarta.persistence.jdbc.user" value=""/>
+            <property name="jakarta.persistence.jdbc.password" value=""/>
+            <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
+
+            <!-- Hibernate specific properties -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+            <property name="hibernate.show_sql" value="false"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+
+            <!-- Connection pool configuration -->
+            <property name="hibernate.connection.provider_class" value="org.hibernate.hikaricp.internal.HikariCPConnectionProvider"/>
+            <property name="hibernate.hikari.autoCommit" value="false"/>
+            <property name="hibernate.hikari.dataSourceClassName" value="com.zaxxer.hikari.HikariDataSource"/>
+            <property name="hibernate.hikari.dataSource.url" value="jdbc:h2:mem:Artemis;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE"/>
+            <property name="hibernate.hikari.dataSource.user" value=""/>
+            <property name="hibernate.hikari.dataSource.password" value=""/>
+
+            <!-- Additional Hibernate properties -->
+            <property name="hibernate.jdbc.time_zone" value="UTC"/>
+            <property name="hibernate.id.new_generator_mappings" value="true"/>
+            <property name="hibernate.connection.provider_disables_autocommit" value="true"/>
+            <property name="hibernate.generate_statistics" value="false"/>
+            <property name="hibernate.jdbc.batch_size" value="25"/>
+            <property name="hibernate.order_inserts" value="true"/>
+            <property name="hibernate.order_updates" value="true"/>
+            <property name="hibernate.query.in_clause_parameter_padding" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>

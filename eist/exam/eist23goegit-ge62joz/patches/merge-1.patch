@@ -1,0 +1,37 @@
+From c598ca80bd0524d29df80188c8b8d766f2fd429a Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bat=C4=B1kan=20Ormanc=C4=B1?= <other.developer@in.tum.de>
+Date: Fri, 26 May 2023 02:46:43 +0200
+Subject: [PATCH] merge-1
+
+---
+ src/de/tum/in/ase/eist/MergeSort.java | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/src/de/tum/in/ase/eist/MergeSort.java b/src/de/tum/in/ase/eist/MergeSort.java
+index 962ffde..0067c4b 100644
+--- a/src/de/tum/in/ase/eist/MergeSort.java
++++ b/src/de/tum/in/ase/eist/MergeSort.java
+@@ -46,13 +46,13 @@ public static void mergeSort(int[] arr) {
+     private static void merge(int[] arr, int[] left, int[] right) {
+         // TODO: Find correct merge implementation from one of the branches.
+         
+-    
+-    
+-    
+-    
+-    
+-    
+-    
++        int i = 0;
++        int k = 0;
++        while (i < left.length) {
++            arr[k] = left[i];
++            i++;
++            k++;
++        }
+     
+     
+     
+-- 
+2.38.1.windows.1
+
