@@ -65,7 +65,7 @@ public class AbsenceServiceTest {
 
         var savedAbsence = absenceService.save(absence);
         assertNotNull(savedAbsence);
-        assertNotNull(absenceRepository.findById(savedAbsence.getId()));
+        assertTrue(absenceRepository.findById(savedAbsence.getId()).isPresent());
     }
 
     @Test
